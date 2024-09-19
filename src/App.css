@@ -40,3 +40,18 @@
 .read-the-docs {
   color: #888;
 }
+
+.app {
+  display: flex;
+}
+
+.form-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.cv-container {
+  flex: 1;
+  padding: 20px;
+  border-left: 1px solid #ccc;
+}
