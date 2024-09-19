@@ -1,34 +1,34 @@
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
-import { Form } from './form'
+import React, { useState } from 'react';
+import Form from './Form';
+import CV from './CV';
+import './App.css';
 
 function App() {
-  const [formData, setformData] = useState({
-    name: "",
-    email: "",
-    phone: ""
-  })
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    // Add more fields as needed
+  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setformData({
+    setFormData({
       ...formData,
       [name]: value,
-    })
-  }
+    });
+  };
 
   return (
-    <div className='app'>
-      <div className='form-container'>
+    <div className="app">
+      <div className="form-container">
         <Form formData={formData} handleChange={handleChange} />
       </div>
-      <div className='cv-container'>
+      <div className="cv-container">
         <CV formData={formData} />
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
