@@ -55,3 +55,29 @@
   padding: 20px;
   border-left: 1px solid #ccc;
 }
+
+/* label {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .nameInput {
+  display: flex;
+  flex-direction: column;
+} */
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+form div {
+  display: block;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px; /* Spacing between the fields */
+}
+
+
